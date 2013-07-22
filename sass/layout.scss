@@ -1,0 +1,44 @@
+@import "compass";
+
+$bg: rgba(#aaa, .5);
+
+#layout {
+  width: 100%;
+  min-width: 500px;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+  header {
+    height: 100px;
+    margin-bottom: 20px;
+    background: $bg;
+  }
+
+  #main {
+    @include pie-clearfix;
+  }
+
+    #content {
+      float: left;
+      width: 69%;
+      padding: 10%;
+      @include box-sizing(border-box);
+      height: 400px;
+      background: $bg;
+    }
+
+    #sidebar {
+      float: right;
+      width: 29%;
+      padding: 10%;
+      @include box-sizing(border-box);
+      height: 400px;
+      background: $bg;
+    }
+
+  footer {
+    margin-top: 20px;
+    background: $bg
+  } 
